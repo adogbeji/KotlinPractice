@@ -14,11 +14,9 @@ interface MotorInterface {
 }
 
 // Inheritance
-open class Motor {
+open class Motor (val model: String, val colour: String, val doors: Int) {
     // Properties
     // Methods
 }
 
-open class MotorOne: Motor() {}
-
-class MotorTwo: MotorOne() {}
+class MotorOne(model: String, colour: String, doors: Int): Motor(model, colour, doors) {}
