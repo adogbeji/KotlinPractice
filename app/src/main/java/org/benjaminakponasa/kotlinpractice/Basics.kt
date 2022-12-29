@@ -5,17 +5,21 @@ fun main() {
 
 
     // When Expressions
-//    val name = "Chris"
+//    val name = "Jack"
 //
 //    when (name) {
-//        "Tom" -> println("$name works as a Lawyer!")
-//        "Michael" -> println("$name works as a Chef!")
+//        "Chris" -> println("$name works as an Estate Agent")
+//        "Michael" -> println("$name works as a Chef")
+//        "Jack" -> {
+//            print("$name is 30 years old\n")
+//            print("He works as a Journalist")
+//        }
 //    }
 }
 
 // Interfaces
 interface MotorInterface {
-    var topSpeed: Double
+    val topSpeed: Double
     fun drive(): String
     fun brake() {
         println("Vehicle braking")
