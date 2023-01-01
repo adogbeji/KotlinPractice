@@ -5,20 +5,28 @@ fun main() {
 
 
     // When Expressions
-//    val name = "Jack"
+//    val name = "Alex"
 //
 //    when (name) {
-//        "Chris" -> println("$name works as an Estate Agent")
-//        "Michael" -> println("$name works as a Chef")
-//        "Jack" -> {
-//            print("$name is 30 years old\n")
-//            print("He works as a Journalist")
+//        "Tom" -> println("$name works as an Architect")
+//        "Paul" -> println("$name works as a Chef")
+//        "Chris" -> {
+//            println("$name is self-employed")
+//            println("He works as a copywriter")
 //        }
 //    }
+
+
+    // ArrayLists
+//    val guests: ArrayList<String> = ArrayList<String>()
+//    guests.add("Chris")
+//    guests.add("Tom")
+//    guests.add("Paul")
+//    println(guests)
 }
 
 // Interfaces
-interface MotorInterface {
+interface MyInterface {
     val topSpeed: Double
     fun drive(): String
     fun brake() {
@@ -28,8 +36,17 @@ interface MotorInterface {
 
 // Inheritance
 open class Motor(val model: String, val colour: String, val doors: Int) {
-    // Properties
-    // Methods
+    var range: Double = 0.0
+
+    fun extendRange(amount: Double) {
+        if (amount > 0) {
+            range += amount
+        }
+    }
+
+    fun drive(distance: Double) {
+        println("Drove for ${distance}km")
+    }
 }
 
 class MotorOne(model: String, colour: String, doors: Int, owner: String): Motor(model, colour, doors) {}
