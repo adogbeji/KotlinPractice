@@ -1,5 +1,7 @@
 package org.benjaminakponasa.kotlinpractice
 
+import java.lang.NullPointerException
+
 fun main() {
     println("I'm an Android App Developer!")
 
@@ -19,9 +21,9 @@ fun main() {
 
     // ArrayLists
 //    val guests: ArrayList<String> = ArrayList<String>()
-//    guests.add("Chris")
-//    guests.add("Tom")
-//    guests.add("Paul")
+//    guests.add("Jack")
+//    guests.add("Peter")
+//    guests.add("Rachael")
 //    println(guests)
 }
 
