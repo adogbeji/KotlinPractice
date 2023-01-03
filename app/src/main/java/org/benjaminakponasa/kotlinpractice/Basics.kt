@@ -20,11 +20,12 @@ fun main() {
 
 
     // ArrayLists
-//    val guests: ArrayList<String> = ArrayList<String>()
-//    guests.add("Jack")
-//    guests.add("Peter")
-//    guests.add("Rachael")
-//    println(guests)
+//    val digits: ArrayList<Double> = ArrayList<Double>()
+//    digits.add(4.25)
+//    digits.add(7.3)
+//    digits.add(-1.45)
+//    digits.add(2.82)
+//    println(digits)
 }
 
 // Interfaces
