@@ -1,9 +1,11 @@
 package org.benjaminakponasa.kotlinpractice
 
-import java.lang.NullPointerException
-
 fun main() {
     println("I'm an Android App Developer!")
+
+    val worker = Worker("Peter", 38)
+//    println(worker.name)
+//    println(worker.age)
 
 
     // When Expressions
@@ -53,3 +55,7 @@ open class Motor(val model: String, val colour: String, val doors: Int) {
 }
 
 class MotorOne(model: String, colour: String, doors: Int, owner: String): Motor(model, colour, doors) {}
+
+
+// Classes
+class Person constructor(name: String, age: Int) {}
