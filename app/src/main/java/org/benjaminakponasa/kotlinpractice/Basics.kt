@@ -57,5 +57,10 @@ open class Motor(val model: String, val colour: String, val doors: Int) {
 class MotorOne(model: String, colour: String, doors: Int, owner: String): Motor(model, colour, doors) {}
 
 
+// Lateinit
+class Car() {
+    lateinit var owner: String
+}
+
 // Classes
 class Person constructor(name: String, age: Int) {}
