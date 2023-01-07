@@ -3,9 +3,8 @@ package org.benjaminakponasa.kotlinpractice
 fun main() {
     println("I'm an Android App Developer!")
 
-    val worker = Worker("Peter", 38)
-//    println(worker.name)
-//    println(worker.age)
+    val worker = Worker("Jack", 33)
+//    worker.workerDetails()
 
 
     // When Expressions
@@ -28,6 +27,18 @@ fun main() {
 //    digits.add(-1.45)
 //    digits.add(2.82)
 //    println(digits)
+}
+
+// Abstract Classes
+abstract class Food(private val name: String, private val age: Int) {
+    abstract val shop: String
+
+    abstract fun eat()
+    abstract fun drink()
+
+    fun foodDetails() {
+        println("Bought $name from $shop")
+    }
 }
 
 // Interfaces
@@ -58,9 +69,25 @@ class MotorOne(model: String, colour: String, doors: Int, owner: String): Motor(
 
 
 // Lateinit
-class Car() {
+class Car {
     lateinit var owner: String
+
+    val model: String = "Honda"
+        // Customer Getter
+    get() {
+        return field.toLowerCase()
+    }
+
+    init {
+        this.owner = "Chris"
+    }
 }
 
 // Classes
-class Person constructor(name: String, age: Int) {}
+class Person(name: String, age: Int) {
+
+    // Initialiser
+    init {
+        println("$name is $age years old")
+    }
+}
