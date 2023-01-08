@@ -30,7 +30,7 @@ fun main() {
 }
 
 // Abstract Classes
-abstract class Food(private val name: String, private val age: Int) {
+abstract class Food(private val name: String, private val price: Double) {
     abstract val shop: String
 
     abstract fun eat()
@@ -76,6 +76,12 @@ class Car {
         // Customer Getter
     get() {
         return field.toLowerCase()
+    }
+
+    var topSpeed: Int = 115
+    get() = field
+    set(value) {
+        field = value
     }
 
     init {
