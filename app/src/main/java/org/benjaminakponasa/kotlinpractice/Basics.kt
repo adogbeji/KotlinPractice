@@ -37,7 +37,7 @@ abstract class Food(private val name: String, private val price: Double) {
     abstract fun drink()
 
     fun foodDetails() {
-        println("Bought $name from $shop")
+        println("Bought some $name for £$price")
     }
 }
 
