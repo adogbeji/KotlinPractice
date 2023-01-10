@@ -41,6 +41,17 @@ abstract class Food(private val name: String, private val price: Double) {
     }
 }
 
+class Guest(name: String, price: Double, override val shop: String): Food(name, price) {
+
+    override fun eat() {
+        println("Eat function")
+    }
+
+    override fun drink() {
+        println("Drink function")
+    }
+}
+
 // Interfaces
 interface MyInterface {
     val topSpeed: Double
