@@ -27,6 +27,11 @@ fun main() {
 //    digits.add(-1.45)
 //    digits.add(2.82)
 //    println(digits)
+
+    var name: String = "Alex"
+//    name = null  --> Compilation ERROR
+    var nullName: String? = "Alex"
+    nullName = null
 }
 
 // Abstract Classes
